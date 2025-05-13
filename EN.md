@@ -1,28 +1,26 @@
-﻿# Документация
+# Documentation
 
 * [First Program](#First-Program)
-* [Variables](#Variables-&-Data-Types)
-* [Nullable types](#Nullable-типы)
-* [Comparison Operators](#операции-сравнения)
-* [Conditional Statements](#условные-конструкции)
-* [Loops](#Циклы)
-* [Arrays](#Массивы)
-* [Functions](#Функции)
-  * [Functions](#Функции)
-  * [Lambda-Functions](##Лямбда-функции)
-* [Ternary Operator](#Тернарный-оператор)
-* [Bitwise Shifts](#Битовые-сдвиги)
-* [Libraries](#Библиотеки)
-* [OOP](#ООП)
-  * [Classes](#Классы)
-  * [Enums](#Перечисления)
-  * [Interfaces](#Интерфейсы)
-  * [Inheritance](#Наследование)
+* [Variables](#Variables-Data-Types)
+* [Nullable types](#Nullable-types)
+* [Comparison Operators](#Comparison-Operators)
+* [Conditional Statements](#Conditional-Statements)
+* [Loops](#Loops)
+* [Arrays](#Arrays)
+* [Functions](#Functions)
+  * [Functions](#Functions)
+  * [Lambda-Functions](##Lambda-Functions)
+* [Ternary Operator](#Ternary-Operator)
+* [Bitwise Shifts](#Bitwise-Shifts)
+* [Libraries](#Libraries)
+* [OOP](#OOP)
+  * [Classes](#Classes)
+  * [Enums](#Enums)
+  * [Interfaces](#Interfaces)
+  * [Inheritance](#Inheritance)
 
 # First Program
-Точкой входа в программу является функция
-`main`. Все, что находится внутри нее
-будет выполнятся при запуске программы.
+The entry point of the program is `main` function. Everything inside it will be executed when program starts.
 
 Сперва давайте поздороваемся с миром 
 при помощи функции `print` или
@@ -134,20 +132,19 @@ def main(){
 
 # Comparison Operators
 
-При сравнении возвращаемое значение
-имеет тип `boolean`.
+When comparing, the return value is of type `boolean`.
 
-Возвращает true, если оба операнда равны:
-`x == y (равно)`
+Returns true if operands are equal:
+`x == y (equal)`
 
-Возвращает true, если оба операнда не равны:
-`x != y (не равно)`
+Returns true if operands are not equal:
+`x != y (not equal)`
 
-Возвращает true, если первый операнд больше второго:
-`x > y (больше)`
+Returns true if the first operand is larger than the second operand:
+`x > y (larger)`
 
-Возвращает true, если первый операнд меньше второго:
-`x < y (меньше)`
+Returns true if the first operand is less than the second operand:
+`x < y (less)`
 
 Возвращает true, если первый операнд больше или равен второму:
 `x <= y (больше или равно)`
@@ -155,7 +152,7 @@ def main(){
 Возвращает true, если первый операнд меньше или равен второму:
 `x >= y (меньше или равно)`
 
-Пример использования:
+Example:
 ````scala
 def main {
     var x = 2;
@@ -163,8 +160,7 @@ def main {
     println(x == y);
 }
 ````
-В консоли мы увидим `false`, так как
-2 не равно 3.
+In debug we see `false`, since 2 doesn't equal 3.
 
 
 # Conditional Statements
