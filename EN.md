@@ -1,7 +1,7 @@
 # Documentation
 
 * [First Program](#First-Program)
-* [Variables](#Variables-Data-Types)
+* [Variables](#Variables--Data-Types)
 * [Nullable types](#Nullable-types)
 * [Comparison Operators](#Comparison-Operators)
 * [Conditional Statements](#Conditional-Statements)
