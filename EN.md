@@ -1,7 +1,7 @@
 ﻿# Документация
 
-* [First Program](#Первая-программа)
-* [Variables](#Переменные-и-типы-данных)
+* [First Program](#First-Program)
+* [Variables](#Variables-&-Data-Types)
 * [Nullable types](#Nullable-типы)
 * [Comparison Operators](#операции-сравнения)
 * [Conditional Statements](#условные-конструкции)
