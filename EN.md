@@ -103,7 +103,7 @@ def main(){
 }
 ````
 
-То мы увидим ошибку:
+We see a error:
 ````
 [Ixion Exception]
 │> [2:14] in file "test.ix" ['test']:
@@ -146,11 +146,11 @@ Returns true if the first operand is larger than the second operand:
 Returns true if the first operand is less than the second operand:
 `x < y (less)`
 
-Возвращает true, если первый операнд больше или равен второму:
-`x <= y (больше или равно)`
+Returns true if the first operand is larger than or equal to the second operand:
+`x <= y (larger or equal)`
 
-Возвращает true, если первый операнд меньше или равен второму:
-`x >= y (меньше или равно)`
+Returns true if the first operand is less than or equal to the second operand:
+`x >= y (less or equal)`
 
 Example:
 ````scala
@@ -176,11 +176,11 @@ def main {
 }
 ```
 
-Все условные операторы:
+All conditional statements:
 
-* `if` - *если...*
-* `else if` - *в другом случае, если...*
-* `else` - *если ни одно из прошлых условий не выполнилось...*
+* `if` 
+* `else if`
+* `else`
 
 ```scala
 def main {
@@ -208,9 +208,9 @@ else не выполниться, так как было выполнено тр
 
 
 # Loops
-Циклы производят выполнение выражений при выполнении условия.
+Loops perform the execution of expressions while a condition is met.
 
-Пример цикла `while`:
+Example of `while`:
 ```java
 while (true) {
   println("Бесконечность не предел!");
@@ -218,23 +218,23 @@ while (true) {
 ```
 В данном примере мы будем бесконечно выводить *Бесконечность не предел!*, т.к. вместо условия стоит `true`.
 
-* Первый пример цикла `for`:
+* First for loop example:
 ```java
 for (var i = 1, i < 10, i+=1) {
   print(i)
 }
 ```
 
-В данном примере:<br>
-Определяем переменную `i` равную *1*<br>
-Пока `i` будет меньше *10*:<br>
-> Выводим переменную `i`;<br>
-> Инкриминируем переменную `i`.
+In this example:<br>
+We Initialize a variable `i` to *1*<br>
+As long as `i` is less than *10*:<br>
+> Output a variable `i`;<br>
+> Incriminating a variable `i`.
 
 # Arrays
-> Это один из сложных типов данных, в нём мы можем хранить сразу несколько значений.
-#### Создание массива с указанием количества элементов
-Указывать тип массива обязательно:
+> This is one of the complex data types, we can store several values in it at once.
+#### Creating an array with a specified number of elements
+Specifying the array type is mandatory:
 ```scala
 def main {
     var arr = new int[5];
