@@ -79,10 +79,9 @@ def main(){
     println(test);
 }
 ````
-Данный код уже будет валидным, и в 
-консоли мы увидим Hello World.
+This code will already be correct and we will see ‘Hello World’ in the debug.
 
-В ixion'e есть следующие типы:
+Ixion has the following types:
 
 
 # Nullable types
@@ -94,8 +93,7 @@ def main(){
 Например `String` - это не примитивный тип,
 а значит хранить `null` он может.
 
-Но вот проблема, если мы напишем такой
-код:
+But here's the problem if we write such code:
 ````scala
 def main(){
     var test : String;
@@ -164,9 +162,9 @@ In debug we see `false`, since 2 doesn't equal 3.
 
 
 # Conditional Statements
-Условия проверяют что-либо, и если это верно, то выполняют какой-либо код.
+Conditions check something, and if it is true, then execute some code.
 
-Простое условие состоит из одного `if`.
+A simple condition consists of a single `if`.
 
 ```scala
 def main {
@@ -270,7 +268,7 @@ def main(){
 
 }
 ```
-Пример 2:
+Example 2:
 ````scala
 def main {
     var ages = new int[]{
@@ -289,7 +287,7 @@ def main {
 Затем идёт имя, аргументы (если они есть), через `:` тип возвращаемого значения 
 и тело функции. 
 
-Пример:
+Example:
 ````scala
 def main {
     print(custom_mul(10));
@@ -299,11 +297,11 @@ def custom_mul(arg : int) : int {
     return arg * 10;
 }
 ````
-Чтобы вернуть результат функции используется ключевое слово `return`.
+To return the result of a function, the `return` keyword is used.
 
 Если функция не имеет аргументов, то скобки, 
 в которые они заключены, в сигнатуре писать необязательно:
-````
+```scala
 def main {
     print(custom_mul());
 }
@@ -313,7 +311,7 @@ def custom_mul : int {
 }
 ````
 ## Lambda-Functions
-Пример:
+Example:
 ````scala
 def main {
     print(message());
@@ -323,7 +321,7 @@ def message => "Lambda!!!";
 ````
 
 # Ternary Operator
-Пример использования:
+Example:
 ```scala
 def main {
   var a = true;
@@ -335,13 +333,13 @@ def main {
 ```
 
 # Bitwise Shifts
-`>>` - сдвигает n бит числа вправо
+`>>` - shifts n bits of the number to the right
 
-`>>>` - сдвигает n бит числа вправо, переносит последний бит в начало
+`>>>` - shifts n bits of the number to the right, fills with zero from the left
 
-`<<` - сдвигает n бит числа влево
+`<<` - shifts n bits of the number to the left
 
-Примеры битового сдвига:
+Example:
 ````scala
 def main {
     println(1 << 10); // 1024
@@ -359,15 +357,15 @@ def main {
 так и все библиотеки, которые есть под jvm.
 
 ```scala
-// Пример #1
+// Example #1
 def main {
   print(Math.cos(0));
 }
 ```
-Тут можно наблюдать встроенную библиотеку java Math.
+Here we can see the built-in java Math library.
 
 ```scala
-// Пример #2
+// Example #2
 using java.util.ArrayList;
 
 def main {
@@ -386,4 +384,4 @@ def main {
 }
 ````
 
-Более подробно о методах библиотек можно почитать в соответствующих главах.
+You can read more about library methods in the corresponding chapters.
