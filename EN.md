@@ -61,8 +61,7 @@ def main(){
 его определяет сам, и в данном случае
 тип будет `byte`.
 
-Через двоеточие можно указывать тип
-переменной, например:
+You can use a colon to specify the type of variable, for example:
 ````scala
 def main(){
     var test : String = 10;
@@ -214,7 +213,7 @@ while (true) {
   println("Бесконечность не предел!");
 }
 ```
-В данном примере мы будем бесконечно выводить *Бесконечность не предел!*, т.к. вместо условия стоит `true`.
+In this example, we will endlessly print *Infinity is not a limit!* because `true` is used as the condition.
 
 * First for loop example:
 ```java
@@ -239,13 +238,13 @@ def main {
     println(arr[1]);
 }
 ```
-Тут мы создали новый массив с типом int, в котором будет 10 элементов.
+Here we have created a new array of `int` type with 10 elements.
 
 Первый элемент массива стоит по индексу *0*, так что если мы хотим вывести элемент массива с индексом *1*, то он будет вторым по порядку.
 Однако в коде мы создаем массив с *5* ячейками, а значит он выглядит так: `[0, 0, 0, 0, 0]`. Поэтому при выводе `array[1]` мы получим *0*,
 так же как было бы с любым другим элементом массива.
 
-#### Создание массива с заранее известными элементами
+#### Creating an array with known elements
 ```scala
 def main(){
 
@@ -283,9 +282,7 @@ def main {
 обратившись к элементу массива с индексом 1 мы получили именно его.
 
 # Functions
-Для определения функции используется ключевое слово `def`. 
-Затем идёт имя, аргументы (если они есть), через `:` тип возвращаемого значения 
-и тело функции. 
+The keyword `def` is used to define a function. This is followed by the name, arguments (if any), a colon (`:`), the return value type, and the function body.
 
 Example:
 ````scala
@@ -299,8 +296,8 @@ def custom_mul(arg : int) : int {
 ````
 To return the result of a function, the `return` keyword is used.
 
-Если функция не имеет аргументов, то скобки, 
-в которые они заключены, в сигнатуре писать необязательно:
+
+If a function has no arguments, the parentheses in its signature are optional:
 ```scala
 def main {
     print(custom_mul());
@@ -348,13 +345,9 @@ def main {
 ````
 
 # Libraries
-Изначальных возможностей Ixion может быть недостаточно,
-однако эту проблему могут решить встроенные библиотеки.
+Ixion's initial capabilities may not be sufficient, but built-in libraries can solve this problem.
 
-Импорт библиотек, 
-поставляемых вместе с Ixion происходит с помощью ключевого слова `using`.
-Могут использоваться как библиотеки самого языка (которых сейчас не так много),
-так и все библиотеки, которые есть под jvm.
+Both the language's own libraries (which are currently few) and all libraries available on the JVM can be used.
 
 ```scala
 // Example #1
@@ -374,8 +367,7 @@ def main {
     print(list.get(0));
 }
 ```
-А в данном примере мы импортируем ArrayList и используем его возможности.
-В языке так же имеется возможность использовать такой синтаксис для импорта:
+In this example, we import ArrayList and use its functionalities. The language also supports the following import syntax:
 ````scala
 using java.util.ArrayList : AL;
 
