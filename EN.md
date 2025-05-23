@@ -32,9 +32,7 @@ def main {
 }
 ````
 
-Если функция не принимает аргументов,
-то скобки писать необязательно, 
-поэтому такая запись эквивалентна:
+If the function takes no arguments, it's not necessary to include parentheses, making this notation equivalent:
 
 ````scala
 def main(){
@@ -45,21 +43,14 @@ def main(){
 
 # Variables & Data Types
 
-Создать переменную можно при помощи
-ключевого слова `var`. 
-После этого указывается имя переменной,
-а после равно значение, которая она будет
-хранить.
+A variable can be created using the `var` keyword. This is followed by the variable's name, and then the value it will store.
 ````scala
 def main(){
     var test = 10;
     println(test);
 }
 ````
-Ожидаемо, что в консоли мы увидим `10`.
-Когда тип явно не указывается, компилятор
-его определяет сам, и в данном случае
-тип будет `byte`.
+As expected, `10` will be displayed in the console. When the type is not explicitly specified, the compiler infers it, and in this case, the type will be `byte`.
 
 You can use a colon to specify the type of variable, for example:
 ````scala
@@ -68,9 +59,7 @@ def main(){
     println(test);
 }
 ````
-Данный код вызовет ошибку, так как тип 
-String не может хранить число, он нужен
-для хранения строк.
+This code will cause an error because the `String` type cannot store a number; it is meant for storing strings.
 
 ````scala
 def main(){
@@ -85,12 +74,7 @@ Ixion has the following types:
 
 # Nullable types
 
-Переменные, которые не являются 
-примитивными могут хранить значение
-`null`. В Ixion'e есть специальный 
-синтаксис для таких переменных.
-Например `String` - это не примитивный тип,
-а значит хранить `null` он может.
+Non-primitive variables can store the value `null`. Ixion has a special syntax for such variables. For example, `String` is a non-primitive type, so it can store `null`.
 
 But here's the problem if we write such code:
 ````scala
@@ -107,26 +91,16 @@ We see a error:
 │> Cannot default initialize variable of type 'java.lang.String'
 ````
 
-Она говорит о том, что переменной
-не было присвоено дефолтное значение.
-До этого мы всегда присваивали значение
-переменной с типом String, но сейчас
-мы этого не сделали, а значит в теории
-она должна хранить `null`.
+It indicates that the variable has not been assigned a default value. Previously, we always assigned a value to `String` type variables, but since we haven't done so now, it should theoretically hold `null`.
 
-Чтобы дать переменной эту возможность,
-изменим нашу конструкцию следующим
-образом:
+To give the variable this feature, let's modify our construction as follows:
 ````scala
 def main(){
     var test : String?;
     println(test);
 }
 ````
-После названия типа появился знак `?`,
-теперь наша переменная хранит `null`, 
-а значит именно это она и выведет в консоль.
-
+A `?` (question mark) appears after the type name. Our variable now stores `null`, and that is precisely what will be printed to the console.
 # Comparison Operators
 
 When comparing, the return value is of type `boolean`.
