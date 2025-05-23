@@ -184,7 +184,7 @@ Loops perform the execution of expressions while a condition is met.
 Example of `while`:
 ```java
 while (true) {
-  println("Бесконечность не предел!");
+  println("Infinity is not the limit!");
 }
 ```
 In this example, we will endlessly print *Infinity is not a limit!* because `true` is used as the condition.
